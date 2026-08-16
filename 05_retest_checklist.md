@@ -22,7 +22,7 @@ Browser: <Chrome version>
 Steps: same as original repro
 Result: Expected behavior restored
 Regression: smoke on <flow> PASS
-Tester: Aaron Jusino
+Tester: Aaron
 ```
 
 ## Sign-off when still broken

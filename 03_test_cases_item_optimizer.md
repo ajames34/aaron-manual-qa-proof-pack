@@ -2,7 +2,7 @@
 
 **Product:** Live catalog / product presentation site with checkout / payment-plan paths  
 **Environment:** Production · Chrome (latest) · Desktop + mobile width  
-**Tester:** Aaron Jusino
+**Tester:** Aaron
 
 | ID | Title | Priority | Preconditions | Steps | Expected | Type |
 |---|---|---|---|---|---|---|

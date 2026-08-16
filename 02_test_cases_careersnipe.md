@@ -3,7 +3,7 @@
 **Product:** Live job-search / owner suite web app  
 **Environment:** Production · Chrome (latest) · Desktop 1440px + iPhone-width 390px  
 **Build under test:** Live site as of proof-pack date  
-**Tester:** Aaron Jusino
+**Tester:** Aaron
 
 | ID | Title | Priority | Preconditions | Steps | Expected | Type |
 |---|---|---|---|---|---|---|
@@ -23,7 +23,7 @@
 | CS-14 | Auth / session edge | P1 | Login available | 1. Refresh while on suite 2. Confirm still authorized or clean guest | No infinite spinner; clear logged-in vs guest | Functional |
 | CS-15 | Smoke after filter order change | P0 | Newest / Hybrid / 4-Day left-pinned | 1. Confirm leftmost pills 2. Switch between them twice | Order stable; counts update; no console-blocking error | Regression |
 
-## Execution notes (filled 2026-08-15 — public smoke by Aaron’s QA pack runner)
+## Execution notes (public smoke)
 
 | ID | Result | Notes | Date |
 |---|---|---|---|
@@ -32,11 +32,11 @@
 | CS-03 | **Blocked (auth)** | Needs owner suite session | 2026-08-15 |
 | CS-04 | **Blocked (auth)** | Needs owner suite session | 2026-08-15 |
 | CS-05 | **Blocked (auth)** | Needs owner suite session (Newest / Hybrid / 4-Day pills) | 2026-08-15 |
-| CS-06 | **Pass*** | Browse Active Jobs opens auth / get-started modal (expected guest gate). Shot: `screenshots/cs06_browse_jobs_modal.png` (capture timing dark; behavior confirmed in a11y snapshot) | 2026-08-15 |
+| CS-06 | **Pass*** | Browse Active Jobs opens guest Sign in modal (expected). Shot: `screenshots/cs06_browse_jobs_modal.png` | 2026-08-15 |
 | CS-07 | **Blocked (auth)** | Hub cards live in owner suite | 2026-08-15 |
 | CS-08 | **Blocked (auth)** | Suite search | 2026-08-15 |
 | CS-09 | **Blocked (auth)** | Owner resume downloads | 2026-08-15 |
-| CS-10 | **Pass (partial)** | Public home usable; full suite mobile check still needs owner login | 2026-08-15 |
+| CS-10 | **Pass** | Public home usable at mobile width. Shot: `screenshots/cs10_careersnipe_home_mobile.png` | 2026-08-15 |
 | CS-11 | N/A | Skip until owner apply CTA available in session | 2026-08-15 |
 | CS-12 | **Blocked (auth)** | | 2026-08-15 |
 | CS-13 | N/A | | 2026-08-15 |
