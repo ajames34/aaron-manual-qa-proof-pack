@@ -29,3 +29,28 @@
 
 ## Screenshots folder
 See [`screenshots/`](./screenshots/)
+
+---
+
+## Session 2 — Drive HUD speed-hold retest
+
+**Date:** 2026-11-12
+**Build:** Production (speed-hold fix commit 7fa75a40)
+**Scope:** Drive HUD speed hold, live road test
+**Browsers:** Chrome · Mobile
+
+## Summary
+- **DH-03 Pass** — Speed hold sticks after fix (was failing in live testing; see BUG-006)
+- **DH-01 / DH-02 Pass (static)** — HUD loads; parked values read 0 MPH + 25 MPH limit as expected
+
+## Results
+
+| Case | Result | Notes |
+|---|---|---|
+| DH-03 | PASS | Speed hold retested live after fix commit 7fa75a40 |
+| DH-01 | PASS | Live site loads; all sections render |
+| DH-02 | PASS (static) | Parked load; live-speed check needs a drive |
+
+## Defects logged this session
+- BUG-006 (speed hold) — found in live testing, fixed, retested Pass
+- GPS-dependent cases (DH-04 through DH-07, DH-09) still pending a full road test

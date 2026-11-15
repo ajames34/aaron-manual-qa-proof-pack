@@ -102,6 +102,35 @@ Sparse/blank feeling; user may think the app broke.
 
 ---
 
+## BUG-006 — Drive HUD speed hold does not hold during a drive
+
+| Field | Value |
+|---|---|
+| **Title** | Speed hold fails in live testing — held speed does not stay held while driving |
+| **Product** | Drive HUD (drive-hud-seven.vercel.app) |
+| **Severity** | S2 Major (core driving feature) |
+| **Environment** | Live road test · production |
+| **Status** | Fixed (commit 7fa75a40, 2026-11-12) · Retested live — Pass |
+
+**Steps to reproduce**
+1. Open Drive HUD and start driving.
+2. Set a hold speed.
+3. Keep driving and watch the held value.
+
+**Expected**
+Held speed stays held until released.
+
+**Actual**
+Hold did not stick during the drive — the held speed dropped/reset instead of staying at the set value.
+
+**Evidence**
+Live road-test session; fix commit 7fa75a40; retest after fix — hold sticks (see DH-03).
+
+**Retest focus**
+Re-run DH-03 on every speed-hold change; confirm on a live drive, not a parked load (parked load shows 0 MPH by design).
+
+---
+
 ## BUG-005 — Item Optimizer product CTA overlap risk on small phones
 
 | Field | Value |
